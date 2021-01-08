@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="161" viewBox="0 0 250 161">
+  <defs>
+    <filter id="bg" x="0" y="0" width="250" height="161" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="dropdown" transform="translate(-1409 -87)">
+    <g transform="matrix(1, 0, 0, 1, 1409, 87)" filter="url(#bg)">
+      <path id="bg-2" data-name="bg" d="M0,0H220V115.461L205.114,131H0Z" transform="translate(15 12)" fill="#767794"/>
+    </g>
+  </g>
+</svg>

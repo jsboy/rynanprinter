@@ -1,0 +1,439 @@
+[20-Sep-2020 15:16:51 UTC] WordPress database error Table 'u517104247_tgQYI.wp_litespeed_img_optm' doesn't exist for query SELECT src,post_id FROM `wp_litespeed_img_optm` WHERE post_id = 5 made by File_Upload_Upgrader->cleanup, wp_delete_attachment, do_action('delete_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Media->delete_attachment, LiteSpeed\Img_Optm->reset_row
+[20-Sep-2020 15:20:01 UTC] WordPress database error Table 'u517104247_tgQYI.wp_litespeed_img_optm' doesn't exist for query SELECT src,post_id FROM `wp_litespeed_img_optm` WHERE post_id = 6 made by File_Upload_Upgrader->cleanup, wp_delete_attachment, do_action('delete_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, LiteSpeed\Media->delete_attachment, LiteSpeed\Img_Optm->reset_row
+[12-Oct-2020 01:44:49 UTC] WordPress database error Table 'u517104247_tgQYI.wp_icl_mo_files_domains' doesn't exist for query SELECT * FROM wp_icl_mo_files_domains made by require_once('wp-admin/admin-footer.php'), do_action('admin_print_footer_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, _wp_footer_scripts, print_footer_scripts, WP_Scripts->do_footer_items, WP_Dependencies->do_items, WP_Scripts->do_item, WP_Scripts->print_translations, load_script_textdomain, load_script_translations, apply_filters('load_script_translation_file'), WP_Hook->apply_filters, WPML_ST_Script_Translations_Hooks->override_jed_file, WPML_ST_Script_Translations_Hooks->is_file_imported, WPML_ST_Translations_File_Dictionary->find_file_info_by_path, WPML_ST_Translations_File_Dictionary_Storage_Table->find, WPML_ST_Translations_File_Dictionary_Storage_Table->load_data
+[12-Oct-2020 01:45:05 UTC] WordPress database error Table 'u517104247_tgQYI.wp_icl_mo_files_domains' doesn't exist for query SELECT * FROM wp_icl_mo_files_domains made by require_once('wp-admin/admin-header.php'), do_action('admin_print_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, print_head_scripts, WP_Scripts->do_head_items, WP_Dependencies->do_items, WP_Scripts->do_item, WP_Scripts->print_translations, load_script_textdomain, load_script_translations, apply_filters('load_script_translation_file'), WP_Hook->apply_filters, WPML_ST_Script_Translations_Hooks->override_jed_file, WPML_ST_Script_Translations_Hooks->is_file_imported, WPML_ST_Translations_File_Dictionary->find_file_info_by_path, WPML_ST_Translations_File_Dictionary_Storage_Table->find, WPML_ST_Translations_File_Dictionary_Storage_Table->load_data
+[12-Oct-2020 01:45:14 UTC] WordPress database error Table 'u517104247_tgQYI.wp_icl_mo_files_domains' doesn't exist for query SELECT * FROM wp_icl_mo_files_domains made by require_once('wp-admin/admin-header.php'), do_action('admin_print_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, print_head_scripts, WP_Scripts->do_head_items, WP_Dependencies->do_items, WP_Scripts->do_item, WP_Scripts->print_translations, load_script_textdomain, load_script_translations, apply_filters('load_script_translation_file'), WP_Hook->apply_filters, WPML_ST_Script_Translations_Hooks->override_jed_file, WPML_ST_Script_Translations_Hooks->is_file_imported, WPML_ST_Translations_File_Dictionary->find_file_info_by_path, WPML_ST_Translations_File_Dictionary_Storage_Table->find, WPML_ST_Translations_File_Dictionary_Storage_Table->load_data
+[12-Oct-2020 01:45:28 UTC] WordPress database error Table 'u517104247_tgQYI.wp_icl_mo_files_domains' doesn't exist for query SELECT * FROM wp_icl_mo_files_domains made by require_once('wp-admin/admin-header.php'), do_action('admin_print_scripts'), WP_Hook->do_action, WP_Hook->apply_filters, print_head_scripts, WP_Scripts->do_head_items, WP_Dependencies->do_items, WP_Scripts->do_item, WP_Scripts->print_translations, load_script_textdomain, load_script_translations, apply_filters('load_script_translation_file'), WP_Hook->apply_filters, WPML_ST_Script_Translations_Hooks->override_jed_file, WPML_ST_Script_Translations_Hooks->is_file_imported, WPML_ST_Translations_File_Dictionary->find_file_info_by_path, WPML_ST_Translations_File_Dictionary_Storage_Table->find, WPML_ST_Translations_File_Dictionary_Storage_Table->load_data
+[12-Oct-2020 01:53:17 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vi'
+					AND s.language!='vi'
+			WHERE s.context = 'WordPress'
+			 LIMIT 1000 OFFSET 0 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 01:53:18 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM wp_term_taxonomy tt
+						 JOIN wp_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2) AND tt.taxonomy IN () made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 03:58:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 0 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 03:58:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM wp_term_taxonomy tt
+						 JOIN wp_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2) AND tt.taxonomy IN () made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 04:09:30 UTC] WordPress database error Duplicate entry 'singapo-singapo' for key 'language_code' for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='singapo'
+					AND s.language!='singapo'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by include('/plugins/sitepress-multilingual-cms/menu/languages.php'), SitePress_EditLanguages->__construct, SitePress_EditLanguages->update, SitePress_EditLanguages->insert_translation
+[12-Oct-2020 04:09:30 UTC] WordPress database error Duplicate entry 'vietnam-singapo' for key 'language_code' for query INSERT INTO wp_icl_languages_translations (name, language_code, display_language_code) VALUES('My Vietnamese ', 'vietnam', 'singapore') made by include('/plugins/sitepress-multilingual-cms/menu/languages.php'), SitePress_EditLanguages->__construct, SitePress_EditLanguages->update, SitePress_EditLanguages->insert_translation
+[12-Oct-2020 04:47:03 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 04:47:03 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:11:08 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:11:11 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:26:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:26:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:26:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM wp_term_taxonomy tt
+						 JOIN wp_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (404) AND tt.taxonomy IN () made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:26:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='en'
+					AND s.language!='en'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:27:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:27:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:27:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:27:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='en'
+					AND s.language!='en'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='en'
+					AND s.language!='en'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:28:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='en'
+					AND s.language!='en'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:29:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='india'
+					AND s.language!='india'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:29:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='vietnam'
+					AND s.language!='vietnam'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:29:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='sg'
+					AND s.language!='sg'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, TranslationManagement->make_duplicates, TranslationManagement->make_duplicate, SitePress->make_duplicate, WPML_Post_Duplication->make_duplicate, WPML_Post_Duplication->save_duplicate, WPML_Create_Post_Helper->insert_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[12-Oct-2020 16:29:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query 
+			SELECT
+				s.id,
+				st.status,
+				s.domain_name_context_md5 AS ctx ,
+				st.value AS translated,
+				st.mo_string AS mo_string,
+				s.value AS original,
+				s.gettext_context
+			FROM wp_icl_strings s
+			LEFT JOIN wp_icl_string_translations st
+				ON s.id=st.string_id
+					AND st.language='en'
+					AND s.language!='en'
+			WHERE s.context = 'default'
+			 LIMIT 1000 OFFSET 1000 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->ajax_setup, require('/plugins/sitepress-multilingual-cms/ajax.php'), do_action('icl_ajx_custom_call'), WP_Hook->do_action, WP_Hook->apply_filters, TranslationManagement->ajax_calls, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[27-Oct-2020 15:41:20 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wp_options` WHERE `option_name` = '_transient_wpml_st_upgrade_in_progress' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, SitePress->init, do_action('wpml_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, WPML_String_Translation->load, WPML_ST_Upgrade->run, WPML_ST_Upgrade->set_upgrade_completed, delete_transient, delete_option
