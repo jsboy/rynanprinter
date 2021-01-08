@@ -24,13 +24,13 @@ define( 'WP_CACHE', true );
 define( 'DB_NAME', 'u517104247_tgQYI' );
 
 /** MySQL database username */
-define( 'DB_USER', 'u517104247_Ujic3' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'mvrG9e53il' );
+define( 'DB_PASSWORD', 'dung@2021' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'mysql' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
