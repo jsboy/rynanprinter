@@ -24,10 +24,10 @@ define( 'WP_CACHE', true );
 define( 'DB_NAME', 'u517104247_tgQYI' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'dung2021' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'dung@2021' );
+define( 'DB_PASSWORD', 'dung2021' );
 
 /** MySQL hostname */
 define( 'DB_HOST', '127.0.0.1' );
