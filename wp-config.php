@@ -65,6 +65,7 @@ define( 'WP_CACHE_KEY_SALT', '?kVEH@9EOj4.VCw_t$_8uh)v]Mt<cucDCdUe*UaY)%k{:18emg
  */
 $table_prefix = 'wp_';
 
+define( 'WP_MEMORY_LIMIT', '512M' );
 
 
 define( 'WP_HOME', 'http://rynanprinting.com/' );
