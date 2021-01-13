@@ -87,3 +87,34 @@ function custom_sidebars() {
 
 }
 add_action( 'widgets_init', 'custom_sidebars' );
+
+
+add_action("wp_ajax_nopriv_getposts", "getposts");
+add_action("wp_ajax_getposts", "getposts");
+
+function getposts() {
+    $ignore = $_REQUEST['ignore'];
+	$ignore = explode(',',$ignore);
+	$args = array(
+		'posts_per_page'=> 4, 
+		'post__not_in' => $ignore
+    );
+    $query = new WP_Query($args);
+    if($query->have_posts()):
+        while($query->have_posts()): $query->the_post(); 
+?>
+        <div class="post-item post" data-postid="<?php the_ID(); ?>">
+            <div class="post-item__content">
+                <?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?>
+                <div class="post-date"><?php the_time("F j, Y");  ?></div>
+                <div class="post-title"><?php the_title();  ?></div>
+                <div class="post-excerpt"><?php the_excerpt();  ?></div>
+            </div>
+            <a href="<?php the_permalink(); ?>" class="read-more">Read more</a>
+        </div>
+<?php
+        endwhile;
+        wp_reset_postdata();
+    endif;
+    exit();
+}

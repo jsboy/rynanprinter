@@ -3390,7 +3390,7 @@ fieldset:disabled a.btn {
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
-    color: #212529;
+    /* color: #212529; */
     background-color: #4dd591;
     border-color: #4dd591; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -11261,7 +11261,7 @@ hr {
   width: 100%;
   height: auto; }
 
-.btn-wrapper {
+.btn-wrapper{
   position: relative;
   margin-bottom: 20px;
   background: url(../img/btn-border.svg) no-repeat;
@@ -11271,6 +11271,7 @@ hr {
   line-height: 38px; }
   .btn-wrapper:focus {
     outline: none!important;
+    box-shadow: none!important;
   }
   .btn-wrapper > span {
     display: block;
@@ -11290,7 +11291,8 @@ hr {
       bottom: -23px; }
   .btn-wrapper:focus, .btn-wrapper:active {
     outline: none !important;
-    background: transparent; }
+    box-shadow: none!important;
+  }
   .btn-wrapper::before {
     position: absolute;
     content: '';
@@ -12654,7 +12656,7 @@ textarea.wpcf7-form-control {
     border-color: #767794; }
 
 .des-text {
-  font-size: 20px;
+  font-size: 1.042vw;
   border-top: #4dd591 solid 1px;
   position: relative;
   padding: 10px 0;
@@ -12723,7 +12725,7 @@ textarea.wpcf7-form-control {
         margin-left: 3rem;
       }
       .list-plus > li {
-        font-size: 20px; 
+        font-size: 1.042vw; 
         font-size: 1.042vw;
       } }
 
@@ -12801,7 +12803,7 @@ textarea.wpcf7-form-control {
 }
     @media (min-width: 1366px) {
       .card.card-product .card-text {
-        font-size: 20px; 
+        font-size: 1.042vw; 
         font-size: 1.042vw; 
       } 
       
@@ -13228,10 +13230,10 @@ h4.news-title {
     font-size: 18px;
     font-size: 0.9375vw; }
   .text-style-9 {
-    font-size: 20px;
+    font-size: 1.042vw;
     font-size: 1.0416666667vw; }
   .text-style-10 {
-    font-size: 20px;
+    font-size: 1.042vw;
     font-size: 1.0416666667vw; }
   .text-style-11 {
     font-size: 18px;
@@ -13356,5 +13358,450 @@ h4.news-title {
   
   .slick-carousel .slider-item {
     padding: 0 27px;
+  }
+}
+
+.featured-post {
+  text-decoration: none;
+  text-align: center;
+}
+
+.featured-post__description  {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-post .post-date {
+  margin: 28px auto 6px;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  color: #4dd591;
+}
+
+.featured-post .post-title {
+  margin: 6px auto 20px;
+  font-family: Montserrat;
+  font-size: 1.875vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: -0.29px;
+  color: #434360;
+}
+
+.featured-post .post-excerpt {
+  margin: 20px auto;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #767794;
+}
+
+.featured-post .read-more {
+  margin: 20px auto 0;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4dd591;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item .post-date {
+  margin: 28px auto 6px 0;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #4dd591;
+}
+
+.post-item .post-title {
+  margin: 6px auto 20px 0;
+  font-family: Montserrat;
+  font-size: 1.875vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: -0.29px;
+  text-align: left;
+  color: #434360;
+}
+
+.post-item .post-excerpt {
+  margin: 20px auto 40px 0;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #767794;
+}
+
+.post-item .read-more {
+  margin: 0 auto 0 0;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4dd591;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+
+.post-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+
+.section-featured,
+.section-posts {
+  padding: 0;
+  margin: 40px 0;
+  
+}
+.section-featured {
+  margin-top: 0!important;
+  padding-top: 40px;
+}
+
+.post-detail {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-detail .img-featured {
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.post-detail .post-date{
+  margin: 0 auto 8px;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #4dd591;
+}
+
+.post-detail .post-title {
+  margin: 8px auto 40px;
+  font-family: Montserrat;
+  font-size: 2.604vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #434360;
+}
+
+.post-detail p {
+  font-size: 1.250vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+
+.post-detail .wp-block-image {
+  margin: 61px auto 8px;
+}
+
+.post-detail .wp-block-image img {
+  
+  height: auto;
+}
+
+.post-detail h2 {
+  margin: 60px auto 24px 0;
+  font-family: Montserrat;
+  font-size: 1.875vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: -0.29px;
+  text-align: left;
+  color: #434360;
+}
+
+.post-detail figcaption {
+  margin: 8px auto 60px 0;
+  font-family: Poppins;
+  font-size: 0.938vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+
+.post-detail ul {
+  list-style: none;
+  padding: 0 0 0 18px;
+}
+
+.post-detail ul li {
+  margin: 8px auto 8px 0;
+  font-family: Poppins;
+  font-size: 1.250vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+
+.post-detail ul li::before {
+  content: "\2022";
+  color: #4dd591;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.post-detail .post-socials {
+  position: relative;
+  margin-top: 20px;
+}
+
+.post-detail .post-socials .socials {
+  margin-bottom: 20px;
+}
+
+.post-detail .post-socials .socials .icons {
+  color: #4dd591;
+  border-color: #4dd591;
+}
+
+.post-detail .post-socials .socials .icons:hover {
+  color: #fff;
+}
+
+.post-tags .tags-title {
+  margin: 0 auto 20px;
+  font-family: Poppins;
+  font-size: 1.042vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #4dd591;
+}
+
+.post-tags .tags-list {
+  text-align: center;
+}
+
+.post-tags .tags-list a{
+  padding: 6px 29px 5px;
+  border-radius: 2px;
+  background-color: #e3e3e3;
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 0.938vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #434360;
+}
+.post-tags .tags-list a + a {
+  margin-left: 12px;
+}
+
+.section-related h2 {
+  margin: 0 auto 60px;
+  font-family: Montserrat;
+  font-size: 3.646vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: -0.56px;
+  text-align: center;
+  color: #4dd591;
+}
+
+.section-related .post-list {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-postcontent {
+  padding: 40px 0  0;
+  margin: 0 auto 40px;
+}
+.section-tags {
+  padding: 30px 0;
+  border-top: 1px solid rgba(118,119,148, 0.1);
+}
+
+.section-related {
+  padding: 60px 0;
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 1024px){
+  .post-item {
+    margin-bottom: 30px;
+  }
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px){
+  .section-featured,
+  .section-posts {
+    margin: 60px 0;
+    
+  }
+  .section-featured {
+    padding-top: 80px;
+  }
+  .post-action {
+    margin-bottom: 160px;
+  }
+  .section-postcontent {
+    padding: 80px 0  0;
+    margin: 0 auto 80px;
+  }
+  .section-tags {
+    padding: 60px 0;
+  }
+  .section-related {
+    padding: 120px 0;
+  }
+  .post-detail .img-featured{
+    margin-top: 120px;
+  }
+  .post-detail .post-socials .socials {
+    position: absolute;
+    left: -96px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-item .post-title,
+  .featured-post .post-title {
+    font-size: 24px;
+  }
+  .post-detail .post-date,
+  .post-item .post-date,
+  .post-item .read-more,
+  .featured-post .post-date,
+  .featured-post .read-more {
+    font-size: 16px;
+  }
+  .post-detail .post-socials .socials .icons {
+    font-size: 1rem;
+    width: 28px;
+    height: 28px;
+    line-height: 26px;
+  }
+  .post-detail .post-title
+  {
+    font-size: 26px;
+  }
+  
+  .post-detail p,
+  .post-item .post-excerpt,
+  .featured-post .post-excerpt {
+    font-size: 16px;
+  }
+  .post-detail h2  {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .post-detail ul li {
+    font-size: 16px;
+  }
+  .post-detail figcaption {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .post-tags .tags-title{
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .post-tags {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .post-tags .tags-list a {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .section-related {
+    padding: 40px 0;
+  }
+  .section-related h2{
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 }
