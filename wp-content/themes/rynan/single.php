@@ -21,7 +21,7 @@
 					<a class="icons" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 			</div>
-			<div class="post-date"><?php the_time("F j, Y");  ?></div>
+			<div class="post-date"><?php the_time("F j, Y"); ?></div>
 			<h1 class="post-title"><?php the_title();  ?></h1>
 <?php
 			the_content();
@@ -32,13 +32,22 @@
 			<article>
 		</div>
 	</div>
+	<?php 
+		$posttags = get_the_tags();
+		if ($posttags) :
+	?>
 	<div  class="section section-tags" data-nav-effect="true" data-navigator="dark" data-navigator-up="dark">
 		<div class="post-tags">
 			<div class="tags-title">Tags</div>
-			<div class="tags-list"><?php the_tags("", ""); ?></div>
+			<div class="tags-list">
+			<?php foreach($posttags as $tag) : ?>
+				<span><?php echo $tag->name; ?></span>
+			<?php endforeach; ?>
+			</div>
 		</div>
 	</div>
 	<?php
+		endif;
 		$postId = get_the_ID();
 		$related = get_posts( array( 'category__in' => wp_get_post_categories($postId), 'numberposts' => 2, 'post__not_in' => array($postId)));
 		if( $related ): 

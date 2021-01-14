@@ -13662,7 +13662,7 @@ h4.news-title {
   text-align: center;
 }
 
-.post-tags .tags-list a{
+.post-tags .tags-list span{
   padding: 6px 29px 5px;
   border-radius: 2px;
   background-color: #e3e3e3;
@@ -13677,7 +13677,7 @@ h4.news-title {
   text-align: center;
   color: #434360;
 }
-.post-tags .tags-list a + a {
+.post-tags .tags-list span + span {
   margin-left: 12px;
 }
 
