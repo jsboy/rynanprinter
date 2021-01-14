@@ -17,6 +17,7 @@
 ?>
 	<div class="section section-featured" data-nav-effect="true" data-navigator="dark" data-navigator-up="dark">
 		<div class="container">
+			<h1 class="blog-heading">RYNAN News</h1>
 			<div class="featured-post post" data-postid="<?php the_ID(); ?>">
 				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full', array('class' => 'img-fluid')); ?></a>
 				<div class="featured-post__description">
