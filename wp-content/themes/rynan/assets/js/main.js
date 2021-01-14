@@ -319,5 +319,11 @@
     setTimeout(function () {
       hideLoading(); // $('#loading').removeClass('loading');
     }, 500);
+
+    $('.post-list .post-item__content').each(function() {
+      var el = $(this).get(0);
+      $clamp(el, {clamp: 6});
+    });
+
   });
 })(jQuery, document);

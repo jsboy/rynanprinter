@@ -19,6 +19,7 @@ function theme_assets(){
     wp_enqueue_script('isotope', $root_js.'isotope.js', array(), false, true);
     wp_enqueue_script('waypoint', $root_js.'jquery.waypoints.min.js', array(), false, true);
     wp_enqueue_script('imageloaded', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array(), false, true);
+    wp_enqueue_script('clamp', $root_js.'clamp.min.js', array(), false, true);
     wp_enqueue_script('main', $root_js.'main.js', array('jquery'), false, true);
 }
 
