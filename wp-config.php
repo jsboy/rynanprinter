@@ -68,8 +68,8 @@ $table_prefix = 'wp_';
 define( 'WP_MEMORY_LIMIT', '512M' );
 
 
-define( 'WP_HOME', 'http://rynanprinting.com/' );
-define( 'WP_SITEURL', 'http://rynanprinting.com/' );
+define( 'WP_HOME', 'https://rynanprinting.com/' );
+define( 'WP_SITEURL', 'https://rynanprinting.com/' );
 
 /* That's all, stop editing! Happy publishing. */
 
