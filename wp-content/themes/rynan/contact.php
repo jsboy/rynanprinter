@@ -379,7 +379,6 @@
 								<select class="custom-select custom-select-lg" type="text" id="hear" name="hear" required>
 									<option value="Facebook">Facebook</option>
 									<option value="Google Search">Google Search</option>
-									<option value="Google Search">Google Search</option>
 									<option value="Google Ads">Google Ads</option>
 									<option value="Word of Mouth">Word of Mouth</option>
 									<option value="Tradeshow">Tradeshow</option>
