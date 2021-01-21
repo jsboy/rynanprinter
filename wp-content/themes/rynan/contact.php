@@ -38,9 +38,9 @@
 				<?php
 				if(have_rows('contacts')):
 					while (have_rows('contacts')): the_row();
-						$subfields = get_field('contacts');
-						foreach ($subfields as $name => $value) :
-							$subfield = get_sub_field_object($name);
+							$label = get_sub_field('label');
+							$value = get_sub_field('description');
+							
 							if(strpos($value,'<p') < 1) {
 								$value = '<p class="text-style-6">'.$value.'</p>';
 							}else {
@@ -48,12 +48,12 @@
 							}
 							echo '<div class="col-lg-4">
 									<div class="mb-md">';
-									the_text($subfield['label'], '<div class="text-style-9 text-primary mb-3">', '</div>');
+									the_text($label, '<div class="text-style-9 text-primary mb-3">', '</div>');
 									the_text($value);
 							echo '										
 									</div>
 								</div>';
-						endforeach;
+						
 					endwhile;
 				endif;
 				?>
