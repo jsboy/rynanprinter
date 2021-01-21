@@ -387,7 +387,7 @@
 							<div class="form-group">
 								<label for="message"><?php _e('Your message'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<textarea class="form-control form-control-lg" id="message" name="message"></textarea>
+								<textarea class="form-control form-control-lg" id="message" name="message" required></textarea>
 							</div>
 						</div>
 						<div class="col-lg-6"></div>
