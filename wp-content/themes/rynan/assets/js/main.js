@@ -54,6 +54,8 @@
     showLoading(); //after document on ready code here
     //slider 
 
+    $("#contactform").validate();
+
     var carousel = $('.slick-carousel');
     carousel.each(function () {
       var $this = $(this);

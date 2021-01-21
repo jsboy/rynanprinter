@@ -70,48 +70,48 @@
 			<div class="section-block section-text-block-wide mb-0">
 				<h3 class="the-title text-primary text-style-3"><?php _e('Drop us a line'); ?></h3>
 				<div class="text-block-content">
-					<form name="contact-form" method="post">
+					<form name="contact-form" method="post" id="contactform">
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('First Name');  ?> <sup class="text-primary">*</sup>
+								<label for="first_name"><?php _e('First Name');  ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="first_name">
+								<input class="form-control form-control-lg" type="text" id="first_name" name="first_name" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Last Name');  ?> <sup class="text-primary">*</sup>
+								<label for="last_name"><?php _e('Last Name');  ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="last_name">
+								<input class="form-control form-control-lg" type="text" id="last_name" name="last_name" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Company Name');  ?> <sup class="text-primary">*</sup>
+								<label for="company_name"><?php _e('Company Name');  ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="company_name">
+								<input class="form-control form-control-lg" type="text" id="company_name" name="company_name" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Email address');  ?> <sup class="text-primary">*</sup>
+								<label for="email"><?php _e('Email address');  ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="email">
+								<input class="form-control form-control-lg" type="email" id="email" name="email" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Contact number'); ?> <sup class="text-primary">*</sup>
+								<label for="phone"><?php _e('Contact number'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="phone">
+								<input class="form-control form-control-lg" type="text" id="phone" name="phone" required>
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Subject'); ?> <sup class="text-primary">*</sup>
+								<label for="subject"><?php _e('Subject'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<select class="custom-select custom-select-lg" name="subject">
+								<select class="custom-select custom-select-lg" id="subject" name="subject" required>
 									<option value="Product Enquiry">Product Enquiry</option>
 									<option value="Technical Support">Technical Support</option>
 									<option value="RYNAN Partnership">RYNAN Partnership</option>
@@ -121,9 +121,9 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Country'); ?> <sup class="text-primary">*</sup>
+								<label for="country"><?php _e('Country'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<select class="custom-select custom-select-lg" name="country">
+								<select class="custom-select custom-select-lg" id="country" name="country" required>
 									<option value="None">None</option>
 									<option value="Afganistan">Afghanistan</option>
 									<option value="Albania">Albania</option>
@@ -374,9 +374,9 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for=""><?php _e('How did you find about us?'); ?> <sup class="text-primary">*</sup>
+								<label for="hear"><?php _e('How did you find about us?'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<select class="custom-select custom-select-lg" type="text" name="hear">
+								<select class="custom-select custom-select-lg" type="text" id="hear" name="hear" required>
 									<option value="none">None</option>
 									<option value="email">Email</option>
 									<option value="google">Google</option>
@@ -385,9 +385,9 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Your message'); ?> <sup class="text-primary">*</sup>
+								<label for="message"><?php _e('Your message'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<textarea class="form-control form-control-lg" name="message"></textarea>
+								<textarea class="form-control form-control-lg" id="message" name="message"></textarea>
 							</div>
 						</div>
 						<div class="col-lg-6"></div>
