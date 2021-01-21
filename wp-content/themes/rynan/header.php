@@ -47,7 +47,7 @@
 				$primary = wp_get_nav_menu_object( 'primary');
 
 				// Echo count of items in menu
-				$menu_class = ($primary->count > 4)?'menu-column':'';
+				$menu_class = ($primary->count > 5)?'menu-column':'';
 				wp_nav_menu(array(
 						'theme_location' => 'primary',
 						'container' => 'ul',
