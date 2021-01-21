@@ -92,7 +92,7 @@
 									</div>
 								</div>
 								<div class="text-center">
-									<h6 class="text-style-11 copyright text-grey">© 2020 RYNAN Technologies Pte Ltd. All rights reserved.</h6>
+									<h6 class="text-style-11 copyright text-grey">© <?php echo date('Y'); ?> RYNAN Technologies Pte Ltd. All rights reserved.</h6>
 								</div>
 							</div>
 						</div>
