@@ -11346,11 +11346,17 @@ hr {
   .btn-login:hover {
     text-decoration: none;
     color: #ffffff; }
+    .btn-login:hover .icon-login {
+      background-image: url(../img/ic-login-white.svg);
+      background-size: auto 26px;
+    }
+ .sub-page .btn-login:hover {
+   color: #4dd591;
+ }
 
-  .btn-login:hover .icon-login {
-    background-image: url(../img/ic-login-white.svg);
-    background-size: auto 26px;
-  }
+ .sub-page .btn-login:hover .icon-login  {
+  background-image: url(../img/ic-login.svg);
+} 
 
 .btn > .icon {
   display: inline-block; }
@@ -13308,6 +13314,10 @@ h4.news-title {
 
 .show.lang-dropdown > [data-toggle="dropdown"] > i{
   color: #fff;
+}
+
+.sub-page .show.lang-dropdown > [data-toggle="dropdown"] > i{
+  color: #4dd591;
 }
 
 .lang-dropdown .dropdown-menu {
