@@ -46,7 +46,7 @@ $query = new WP_Query( $args );
 				while ( $query->have_posts() ) : $query->the_post();
 					$postId = get_the_ID();
 					$terms = get_the_terms( $postId, 'product-category' );
-					$catName = ($terms[0]->slug)?$terms[0]->slug:'Uncategorized';
+					$catName = ($terms[0]->slug)?$terms[0]->name:'Uncategorized';
 					$product_image = get_field('product_image');
 					$product_thumb = (get_field('product_thumb'))? get_field('product_thumb') : $product_image;
 					$specifications_list = get_field('specifications_list');
