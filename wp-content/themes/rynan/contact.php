@@ -5,6 +5,9 @@
  * */
 
 	if($_POST) :
+		$first_name = $_POST['first_name'];
+		$last_name = $_POST['last_name'];
+		$company_name = $_POST['company_name'];
 		$subject = $_POST['subject'];
 		$email = $_POST['email'];
 		$phone = $_POST['phone'];
@@ -12,7 +15,9 @@
 		$message = $_POST['message'];
 		$hear = $_POST['hear'];
 		$to = get_option('admin_email');
-		$body = '<p><strong>Subject:</strong> '. $subject.'</p>';
+		$body = '<p><strong>Name:</strong> '. $first_name.' '. $last_name .'</p>';
+		$body .= '<p><strong>Company:</strong> '. $company_name.'</p>';
+		$body .= '<p><strong>Subject:</strong> '. $subject.'</p>';
 		$body .= '<p><strong>Email:</strong> '. $email.'</p>';
 		$body .= '<p><strong>Phone:</strong> '. $phone.'</p>';
 		$body .= '<p><strong>Country:</strong> '. $country.'</p>';
@@ -69,9 +74,23 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="form-group">
-								<label for=""><?php _e('Name');  ?> <sup class="text-primary">*</sup>
+								<label for=""><?php _e('First Name');  ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="name">
+								<input class="form-control form-control-lg" type="text" name="first_name">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for=""><?php _e('Last Name');  ?> <sup class="text-primary">*</sup>
+								</label>
+								<input class="form-control form-control-lg" type="text" name="last_name">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label for=""><?php _e('Company Name');  ?> <sup class="text-primary">*</sup>
+								</label>
+								<input class="form-control form-control-lg" type="text" name="company_name">
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -92,7 +111,12 @@
 							<div class="form-group">
 								<label for=""><?php _e('Subject'); ?> <sup class="text-primary">*</sup>
 								</label>
-								<input class="form-control form-control-lg" type="text" name="subject">
+								<select class="custom-select custom-select-lg" name="subject">
+									<option value="Product Enquiry">Product Enquiry</option>
+									<option value="Technical Support">Technical Support</option>
+									<option value="RYNAN Partnership">RYNAN Partnership</option>
+									<option value="Feedback">Feedback</option>
+								</select>
 							</div>
 						</div>
 						<div class="col-lg-6">
