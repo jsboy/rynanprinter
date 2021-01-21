@@ -16,7 +16,10 @@
 	wp_head();
 	?>
 </head>
-<body class="on-popup">
+<?php
+	$clazz = (is_front_page())?'home':'sub-page';
+?>
+<body class="on-popup <?php echo $clazz; ?>">
 <?php
 	$socials = get_field('socials', 'option');
 	$dark_style = (is_front_page())?'style="height: 0;"':'';
