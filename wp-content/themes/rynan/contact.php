@@ -377,9 +377,15 @@
 								<label for="hear"><?php _e('How did you find about us?'); ?> <sup class="text-primary">*</sup>
 								</label>
 								<select class="custom-select custom-select-lg" type="text" id="hear" name="hear" required>
-									<option value="none">None</option>
-									<option value="email">Email</option>
-									<option value="google">Google</option>
+									<option value="Facebook">Facebook</option>
+									<option value="Google Search">Google Search</option>
+									<option value="Google Search">Google Search</option>
+									<option value="Google Ads">Google Ads</option>
+									<option value="Word of Mouth">Word of Mouth</option>
+									<option value="Tradeshow">Tradeshow</option>
+									<option value="Linkedin">Linkedin</option>
+									<option value="Youtube">Youtube</option>
+									<option value="Others">Others</option>
 								</select>
 							</div>
 						</div>
