@@ -71,7 +71,7 @@
 							<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
 						</div>
 					</div>
-					<a class="btn-login" href="<?php echo $login_url; ?>">
+					<a class="btn-login" href="<?php echo $login_url; ?>" target="_blank">
 						<i class="icons icon-login"></i><?php _e('Partner Login'); ?>
 					</a>
 				</div>
@@ -177,7 +177,7 @@
 				<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
 			</div>
 		</div>
-		<a class="btn-login" href="<?php echo $login_url; ?>">
+		<a class="btn-login" href="<?php echo $login_url; ?>" target="_blank">
 			<i class="icons icon-login"></i><?php _e('Partner Login'); ?>
 		</a>
 		<!-- <?php do_action('wpml_add_language_selector'); ?> -->
