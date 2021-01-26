@@ -66,7 +66,7 @@
 						</a>
 
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLang">
-							<a class="dropdown-item" href="<?php echo site_url("/sg"); ?>">Global</a>
+							<a class="dropdown-item" href="<?php echo site_url("/"); ?>">Global</a>
 							<a class="dropdown-item" href="<?php echo site_url('/india'); ?>">India</a>
 							<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
 						</div>
@@ -172,7 +172,7 @@
 			</a>
 
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-				<a class="dropdown-item" href="<?php echo site_url('/sg'); ?>">Global</a>
+				<a class="dropdown-item" href="<?php echo site_url('/'); ?>">Global</a>
 				<a class="dropdown-item" href="<?php echo site_url('/india'); ?>">India</a>
 				<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
 			</div>
