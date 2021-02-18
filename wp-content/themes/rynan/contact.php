@@ -124,7 +124,7 @@
 								<label for="country"><?php _e('Country'); ?> <sup class="text-primary">*</sup>
 								</label>
 								<select class="custom-select custom-select-lg" id="country" name="country" required>
-									<option value="None">None</option>
+									<option value="">Select One</option>
 									<option value="Afganistan">Afghanistan</option>
 									<option value="Albania">Albania</option>
 									<option value="Algeria">Algeria</option>
