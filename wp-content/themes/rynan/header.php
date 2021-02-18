@@ -11,7 +11,8 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 	<link rel="icon" href="/favicon-16x16.ico" sizes="16x16" type="image/x-icon">
-	<link rel="icon" href="/favicon-48x48.ico" sizes="48x48" type="image/x-icon"> 
+	<link rel="icon" href="/favicon-48x48.ico" sizes="48x48" type="image/x-icon">
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<?php
 	wp_head();
 	?>
