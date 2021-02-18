@@ -49,12 +49,23 @@
     $this.find('.loading-content').remove();
   }; //doc ready
 
+  function submitContactForm(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6Le3dEkaAAAAAILgzD619oOuewKXHDSvUSPTXCmn', {action: 'submit'}).then(function(token) {
+          // Add your logic to submit to your backend server here.
+          $("#token").val(token);
+      });
+    });
+  }
 
   $(function () {
     showLoading(); //after document on ready code here
     //slider 
 
     $("#contactform").validate();
+
+    $('#contactform button[type="submit"]').on('click', submitContactForm);
 
     var carousel = $('.slick-carousel');
     carousel.each(function () {

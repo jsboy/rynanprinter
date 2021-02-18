@@ -400,7 +400,7 @@
 							<div class="form-group">
 								<label for="">&nbsp;</label>
 								<div class="text-lg-right">
-									<button type="submit" data-sitekey="6Le3dEkaAAAAAILgzD619oOuewKXHDSvUSPTXCmn" class="btn btn-outline-primary btn-lg btn-wrapper g-recaptcha" data-action='submit'>
+									<button type="submit" class="btn btn-outline-primary btn-lg btn-wrapper g-recaptcha">
 										<span><?php _e('Submit'); ?></span>
 									</button>
 								</div>
