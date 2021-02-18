@@ -51,7 +51,7 @@
 
   function submitContactForm(response) {
     // submit the form which now includes a g-recaptcha-response input
-     $("#orderform").submit();
+     $("#contactform").submit();
     return true;
   }
 
