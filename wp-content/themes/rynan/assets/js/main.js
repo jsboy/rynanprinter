@@ -1,4 +1,10 @@
 //Global function
+function submitContactForm(response) {
+  // submit the form which now includes a g-recaptcha-response input
+   $("#contactform").submit();
+  return true;
+}
+
 (function ($, doc) {
   // alert(1);
   var brandLoadingTime = 3000,
@@ -48,12 +54,6 @@
     var $this = $(this[0]);
     $this.find('.loading-content').remove();
   }; //doc ready
-
-  function submitContactForm(response) {
-    // submit the form which now includes a g-recaptcha-response input
-     $("#contactform").submit();
-    return true;
-  }
 
   $(function () {
     showLoading(); //after document on ready code here
