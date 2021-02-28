@@ -57,9 +57,12 @@
 								while (have_rows('features')): the_row();
 									$subfields = get_field('features');
 									foreach ($subfields as $name => $value) :
-										$subfield = get_sub_field_object($name);
-										the_text($subfield['label'], '<div class="h6 text-style-7 text-info mb-3">', '</div>');
-										the_text( $value, '<div class="mb-sm text-style-6 text-content-lightgrey">', '</div>');
+										if($value){
+											$subfield = get_sub_field_object($name);
+											the_text($subfield['label'], '<div class="h6 text-style-7 text-info mb-3">', '</div>');
+											the_text( $value, '<div class="mb-sm text-style-6 text-content-lightgrey">', '</div>');
+										}
+										
 									endforeach;
 								endwhile;
 							endif;

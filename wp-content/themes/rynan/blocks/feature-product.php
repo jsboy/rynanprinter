@@ -31,10 +31,12 @@
 			<?php if(have_rows('feature_list')): ?>
 			<div class="infos-list">
 				<?php while (have_rows('feature_list')): the_row(); ?>
+				<?php if(get_sub_field('text')): ?>
 				<div class="infos-item">
 					<h6 class="<?php echo $text_style; ?> text-style-12"><?php the_sub_field('name');?></h6>
 					<h5 class="text-style-5"><?php the_sub_field('text'); ?></h5>
 				</div>
+				<?php endif; ?>
 				<?php endwhile; ?>
 			</div>
 			<?php endif; ?>
