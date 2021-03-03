@@ -13293,7 +13293,7 @@ h4.news-title {
 }
 
 #dropdownMenuLink:hover {
-  color: #01B9FF;
+  color:  #01B9FF;
 }
 
 .lang-dropdown {
@@ -13312,7 +13312,7 @@ h4.news-title {
 }
 
 .show.lang-dropdown > [data-toggle="dropdown"] > i{
-  color: #fff;
+  color: #01B9FF;
 }
 
 .sub-page .show.lang-dropdown > [data-toggle="dropdown"] > i{
