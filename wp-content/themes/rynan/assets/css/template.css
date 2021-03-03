@@ -13291,6 +13291,11 @@ h4.news-title {
 #dropdownMenuLink {
   color: #4dd591;
 }
+
+#dropdownMenuLink:hover {
+  color: #01B9FF;
+}
+
 .lang-dropdown {
   vertical-align: middle;
   margin-right: 25px;
