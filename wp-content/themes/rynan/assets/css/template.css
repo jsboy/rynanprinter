@@ -11350,13 +11350,7 @@ hr {
       background-image: url(../img/ic-login-white.svg);
       background-size: auto 26px;
     }
- .sub-page .btn-login:hover {
-   color: #4dd591;
- }
 
- .sub-page .btn-login:hover .icon-login  {
-  background-image: url(../img/icons/ic-login.svg);
-} 
 
 .btn > .icon {
   display: inline-block; }
