@@ -138,6 +138,7 @@
 						$i = 0;
 						foreach ($subfields as $name => $value) :
 							$subfield = get_sub_field_object($name);
+							if($value) {
 							$value = str_replace('<ul>', '<ul class="list-plus">', $value, $count);
 							if($count <= 0){
 								$value = '<ul class="list-plus"><li>'. $value .'</li></ul>';
@@ -145,13 +146,14 @@
 					?>
 					<div class="product-specifications">
 					<?php
-						if($value) {
+						
 							the_text($subfield['label'], '<h6 class="text-style-9 text-primary text-uppercase">', '</h6>');
 							the_text( $value );
-						}
+						
 					?>
 					</div>
 				<?php
+							}
 							if($i == $size) {
 								echo '</div><div class="col-lg-6">';
 							}
