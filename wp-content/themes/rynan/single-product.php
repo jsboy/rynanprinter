@@ -145,8 +145,10 @@
 					?>
 					<div class="product-specifications">
 					<?php
-						the_text($subfield['label'], '<h6 class="text-style-9 text-primary text-uppercase">', '</h6>');
-						the_text( $value );
+						if($value) {
+							the_text($subfield['label'], '<h6 class="text-style-9 text-primary text-uppercase">', '</h6>');
+							the_text( $value );
+						}
 					?>
 					</div>
 				<?php
