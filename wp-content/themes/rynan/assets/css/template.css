@@ -12794,7 +12794,12 @@ textarea.wpcf7-form-control {
 .card {
   margin-bottom: 30px; }
   .card .product-thumb {
-    margin-bottom: 30px; }
+    margin-bottom: 30px; 
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .card .card-title {
     margin-bottom: 20px; }
   .card.card-product {
