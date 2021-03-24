@@ -69,12 +69,8 @@ $query = new WP_Query( $args );
 										break;
 									}
 									if($value) {
-										$subfield = get_sub_field($name);
-										echo '<!--';
-										var_dump($subfield);
-										echo '-->';
 										echo '<strong>';
-										echo $subfield['label'];
+										echo $name;
 										echo '</strong>';
 										echo $value . '<br>';
 										// echo 'Up to '.$specifications_list['print_heads'].'<br>';
