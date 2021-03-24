@@ -69,9 +69,10 @@ $query = new WP_Query( $args );
 										break;
 									}
 									if($value) {
+										$name = str_replace('_', ' ', $name);
 										echo '<strong>';
 										echo $name;
-										echo '</strong>';
+										echo ': </strong>';
 										echo $value . '<br>';
 										// echo 'Up to '.$specifications_list['print_heads'].'<br>';
 										$i++;
