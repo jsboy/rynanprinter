@@ -63,18 +63,29 @@ $query = new WP_Query( $args );
 							<?php if($specifications_list): ?>
 							<div class="card-text">
 								<?php
-								echo '<strong>';
-								_e('Printheads: ');
-								echo '</strong>';
-								echo 'Up to '.$specifications_list['print_heads'].'<br>';
-								echo '<strong>';
-								_e('Print speed: ');
-								echo '</strong>';
-								echo $specifications_list['print_speed'].'<br>';
-								echo '<strong>';
-								_e('Resolution: ');
-								echo '</strong>';
-								echo $specifications_list['resolution'];
+								$i = 0;
+								foreach ($specifications_list as $name => $value) :
+									if($i >=  3)  {
+										break;
+									}
+									$subfield = get_sub_field_object($name);
+									if($value) {
+										echo '<strong>';
+										echo $subfield['label'];
+										echo '</strong>';
+										echo $value .  '<br>';
+										// echo 'Up to '.$specifications_list['print_heads'].'<br>';
+										$i++;
+									}
+								// echo '<strong>';
+								// _e('Print speed: ');
+								// echo '</strong>';
+								// echo $specifications_list['print_speed'].'<br>';
+								// echo '<strong>';
+								// _e('Resolution: ');
+								// echo '</strong>';
+								// echo $specifications_list['resolution'];
+								endforeach;
 								?>
 							</div>
 							<?php endif; ?>
