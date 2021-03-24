@@ -68,12 +68,12 @@ $query = new WP_Query( $args );
 									if($i >=  3)  {
 										break;
 									}
-									$subfield = get_sub_field_object($name);
 									if($value) {
+										$subfield = get_sub_field_object($name);
 										echo '<strong>';
 										echo $subfield['label'];
 										echo '</strong>';
-										echo $value .  '<br>';
+										echo $value . '<br>';
 										// echo 'Up to '.$specifications_list['print_heads'].'<br>';
 										$i++;
 									}
