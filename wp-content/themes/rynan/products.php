@@ -69,9 +69,9 @@ $query = new WP_Query( $args );
 										break;
 									}
 									if($value) {
-										$subfield = get_sub_field_object($name);
+										$subfield = get_sub_field($name);
 										echo '<!--';
-										var_dump($subfield['value']);
+										var_dump($subfield);
 										echo '-->';
 										echo '<strong>';
 										echo $subfield['label'];
