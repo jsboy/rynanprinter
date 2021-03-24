@@ -70,21 +70,12 @@ $query = new WP_Query( $args );
 									}
 									if($value) {
 										$name = str_replace('_', ' ', $name);
-										echo '<strong>';
+										echo '<strong class="text-capitalize">';
 										echo $name;
 										echo ': </strong>';
 										echo $value . '<br>';
-										// echo 'Up to '.$specifications_list['print_heads'].'<br>';
 										$i++;
 									}
-								// echo '<strong>';
-								// _e('Print speed: ');
-								// echo '</strong>';
-								// echo $specifications_list['print_speed'].'<br>';
-								// echo '<strong>';
-								// _e('Resolution: ');
-								// echo '</strong>';
-								// echo $specifications_list['resolution'];
 								endforeach;
 								?>
 							</div>
