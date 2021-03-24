@@ -71,7 +71,7 @@ $query = new WP_Query( $args );
 									if($value) {
 										$subfield = get_sub_field_object($name);
 										echo '<!--';
-										the_text($name);
+										the_text($subfield);
 										echo '-->';
 										echo '<strong>';
 										echo $subfield['label'];
