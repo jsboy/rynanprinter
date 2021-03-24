@@ -70,6 +70,9 @@ $query = new WP_Query( $args );
 									}
 									if($value) {
 										$subfield = get_sub_field_object($name);
+										echo '<!--';
+										var_dump($subfield);
+										echo '-->';
 										echo '<strong>';
 										echo $subfield['label'];
 										echo '</strong>';
