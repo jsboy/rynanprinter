@@ -69,7 +69,7 @@
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLang">
 							<a class="dropdown-item" href="<?php echo site_url("/"); ?>">Global</a>
 							<a class="dropdown-item" href="<?php echo site_url('/india'); ?>">India</a>
-							<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
+							<!-- <a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a> -->
 						</div>
 					</div>
 					<a class="btn-login" href="<?php echo $login_url; ?>" target="_blank">
@@ -111,7 +111,7 @@
 					<?php endif; ?>
 				</div>
 				<!-- <div id="language-menu" class="row"><?php do_action('wpml_add_language_selector'); ?></div> -->
-				<h6 class="text-style-11 copyright text-grey">© 2020 RYNAN Technologies Pte Ltd. All rights reserved.</h6>
+				<h6 class="text-style-11 copyright text-grey">© <?php echo date('Y'); ?> RYNAN Technologies Pte Ltd. All rights reserved.</h6>
 			</div>
 		</div>
 	</div>
@@ -175,7 +175,7 @@
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 				<a class="dropdown-item" href="<?php echo site_url('/'); ?>">Global</a>
 				<a class="dropdown-item" href="<?php echo site_url('/india'); ?>">India</a>
-				<a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a>
+				<!-- <a class="dropdown-item" href="<?php echo site_url('/vietnam'); ?>">Vietnam</a> -->
 			</div>
 		</div>
 		<a class="btn-login" href="<?php echo $login_url; ?>" target="_blank">
