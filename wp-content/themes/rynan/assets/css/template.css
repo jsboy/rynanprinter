@@ -13329,7 +13329,7 @@ h4.news-title {
   padding: 17px 0 18px;
   background: url(../img/dropdown-bg.svg) no-repeat center center;
   width: 220px;
-  min-height: 131px;
+  /* min-height: 131px; */
   border: none;
 }
 
