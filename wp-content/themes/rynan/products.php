@@ -50,6 +50,7 @@ $query = new WP_Query( $args );
 					$product_image = get_field('product_image');
 					$product_thumb = (get_field('product_thumb'))? get_field('product_thumb') : $product_image;
 					$specifications_list = get_field('specifications_list');
+					$heading = get_field('heading');
 			?>
 				<a href="<?php the_permalink();?>" class="col-md-4 product-item <?php echo naming_clazz($catName); ?>">
 					<div class="card card-product">
@@ -60,7 +61,8 @@ $query = new WP_Query( $args );
 						<div class="card-body">
 							<h6 class="text-primary text-style-9"><?php echo $catName; ?></h6>
 							<h5 class="card-title text-dusk text-style-5"><?php the_title(); ?></h5>
-							<?php if($specifications_list): ?>
+							<?php the_text($heading, '<p>', '</p>'); ?>
+							<!-- <?php if($specifications_list): ?>
 							<div class="card-text">
 								<?php
 								$i = 0;
@@ -79,7 +81,7 @@ $query = new WP_Query( $args );
 								endforeach;
 								?>
 							</div>
-							<?php endif; ?>
+							<?php endif; ?> -->
 						</div>
 					</div>
 				</a>
