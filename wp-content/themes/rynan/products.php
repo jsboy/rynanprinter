@@ -51,8 +51,9 @@ $query = new WP_Query( $args );
 					$product_thumb = (get_field('product_thumb'))? get_field('product_thumb') : $product_image;
 					$specifications_list = get_field('specifications_list');
 					$heading = get_field('heading');
+					$catSlug = ($terms[0]->slug)?$terms[0]->slug:'Uncategorized';
 			?>
-				<a href="<?php the_permalink();?>" class="col-md-4 product-item <?php echo naming_clazz($catName); ?>">
+				<a href="<?php the_permalink();?>" class="col-md-4 product-item <?php echo naming_clazz($catSlug); ?>">
 					<div class="card card-product">
 						<!--w:440 h:320-->
 						<div class="product-thumb">
