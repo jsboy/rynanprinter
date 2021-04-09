@@ -87,9 +87,9 @@
 								if($value){
 								echo '<div class="row">
 										<div class="col-lg-3">
-											<div class="h6 text-style-7 text-info py-3" style="margin-bottom: 0;">'.$subfield['label'].'</div>
+											<div class="h6 text-style-7 text-info py-3">'.$subfield['label'].'</div>
 										</div>
-										<div class="col-lg-9 py-3 text-style-6 text-content-lightgrey">'.$value.'</div>
+										<div class="col-lg-9 text-style-6 pt-1 text-content-lightgrey">'.$value.'</div>
 									</div>';
 								}
 							endforeach;
