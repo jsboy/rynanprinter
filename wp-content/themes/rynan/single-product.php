@@ -85,11 +85,11 @@
 							foreach ($subfields as $name => $value) :
 								$subfield = get_sub_field_object($name);
 								if($value){
-								echo '<div class="row mb-md">
+								echo '<div class="row">
 										<div class="col-lg-3">
 											<div class="h6 text-style-7 text-info py-3">'.$subfield['label'].'</div>
 										</div>
-										<div class="col-lg-9 text-style-6 text-content-lightgrey">'.$value.'</div>
+										<div class="col-lg-9 d-flex align-items-center text-style-6 text-content-lightgrey">'.$value.'</div>
 									</div>';
 								}
 							endforeach;
