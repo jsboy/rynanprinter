@@ -42,7 +42,7 @@
 	endif;
 	get_header();
 	if(defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE === 'india') {
-		echo '<!--' . ICL_LANGUAGE_CODE . '-->';
+		echo '<!--' . $to . '-->';
 	}
 	while (have_posts()): the_post();
 		$introduction = get_field('introduction');
