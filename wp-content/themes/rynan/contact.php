@@ -24,7 +24,7 @@
 		$body .= '<p><strong>How did you find about us?:</strong> '. $hear.'</p>';
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 		$subject_email = 'New request <'.$email.'>';
-		$admin_email = get_field('admin_email');
+		$admin_email = get_field('admin_email', 'option');
 		$to = (!$admin_email)?get_option('admin_email'): $admin_email;
 		wp_mail($to, $subject_email, $body, $headers);
 		$thank_page = get_field('thank_page', 'option');
