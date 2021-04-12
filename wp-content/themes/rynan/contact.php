@@ -31,11 +31,6 @@
 		wp_redirect($thank_page);
 	endif;
 	get_header();
-	if(defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE === 'india') {
-		$admin_email = get_field('admin_email', 'option');
-		$to = (!$admin_email)?get_option('admin_email'): $admin_email;
-		echo '<!--' . $to . '-->';
-	}
 	while (have_posts()): the_post();
 		$introduction = get_field('introduction');
 ?>
