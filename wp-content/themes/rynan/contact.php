@@ -24,18 +24,8 @@
 		$body .= '<p><strong>How did you find about us?:</strong> '. $hear.'</p>';
 		$headers = array('Content-Type: text/html; charset=UTF-8');
 		$subject_email = 'New request <'.$email.'>';
-		$to = get_option('admin_email');
-
 		$admin_email = get_field('admin_email');
-
-		if(defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE === 'india') {
-			$to = $admin_email['india'];
-		}else {
-			$to = $admin_email['global'];
-		}
-
-		$to = (!$to)?get_option('admin_email'): $to;
-
+		$to = (!$admin_email)?get_option('admin_email'): $admin_email;
 		wp_mail($to, $subject_email, $body, $headers);
 		$thank_page = get_field('thank_page', 'option');
 		wp_redirect($thank_page);
