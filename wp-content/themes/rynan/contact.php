@@ -29,7 +29,6 @@
 		$admin_email = get_field('admin_email');
 
 		if(defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE === 'india') {
-			echo '<!--' . ICL_LANGUAGE_CODE . '-->';
 			$to = $admin_email['india'];
 		}else {
 			$to = $admin_email['global'];
@@ -42,6 +41,9 @@
 		wp_redirect($thank_page);
 	endif;
 	get_header();
+	if(defined( 'ICL_LANGUAGE_CODE' ) && ICL_LANGUAGE_CODE === 'india') {
+		echo '<!--' . ICL_LANGUAGE_CODE . '-->';
+	}
 	while (have_posts()): the_post();
 		$introduction = get_field('introduction');
 ?>
