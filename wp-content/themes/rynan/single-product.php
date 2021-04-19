@@ -43,9 +43,10 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<section class="section section-background section-160 waypoint-group" data-nav-effect="true" data-navigator='white' data-navigator-up='dark'>
 		<div class="container">
+			<?php if(have_rows('features')): ?>
 			<div class="section-block section-text-block-wide">
 				<h3 class="the-title text-primary text-style-3"><?php _e('Key Features'); ?></h3>
 				<div class="text-block-content mb-xl">
@@ -53,7 +54,7 @@
 						<div class="col-lg-8">
 							<?php the_text($feature_introduction, '<div class="mb-lg text-style-6 text-content-lightgrey">', '</div>'); ?>
 							<?php
-							if(have_rows('features')):
+							
 								while (have_rows('features')): the_row();
 									$subfields = get_field('features');
 									foreach ($subfields as $name => $value) :
@@ -65,7 +66,7 @@
 										
 									endforeach;
 								endwhile;
-							endif;
+							
 							?>
 						</div>
 						<div class="col-lg-4 d-flex-center">
@@ -75,11 +76,13 @@
 				</div>
 				<hr class="my-0">
 			</div>
+			<?php endif; 
+			if(have_rows('benefits_list')):
+			?>
 			<div class="section-text-block-wide">
 				<h3 class="the-title text-primary text-style-3"><?php _e('Benefits'); ?></h3>
 				<div class="text-block-content">
 					<?php
-					if(have_rows('benefits_list')):
 						while (have_rows('benefits_list')): the_row();
 							$subfields = get_field('benefits_list');
 							foreach ($subfields as $name => $value) :
@@ -94,12 +97,14 @@
 								}
 							endforeach;
 						endwhile;
-					endif;
+					
 					?>
 				</div>
 			</div>
+			<?php endif; ?>
 		</div>
 	</section>
+	<?php if(!empty($pictures)): ?>
 	<section class="section product-slider waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='white'>
 		<div class="container">
 			<div class="mb-md text-center">
@@ -123,6 +128,8 @@
 			</div>
 		</div>
 	</section>
+	<?php endif; ?>
+	<?php if(have_rows('specifications_list')): ?>
 	<section class="section waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='dark'>
 		<div class="container">
 			<div class="mb-md text-center">
@@ -131,7 +138,7 @@
 			<div class="row row-service">
 				<div class="col-lg-6">
 					<?php
-				if(have_rows('specifications_list')):
+				
 					while (have_rows('specifications_list')): the_row();
 						$subfields = get_field('specifications_list');
 						$size = floor(count($subfields)/2);
@@ -160,12 +167,13 @@
 							$i++;
 						endforeach;
 					endwhile;
-				endif;
+				
 				?>
 				</div>
 			</div>
 		</div>
 	</section>
+	<?php endif; ?>
 <?php
 
 	endwhile;
