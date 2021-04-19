@@ -1,0 +1,43 @@
+
+footer h4 {
+    color: #ffffff;
+}
+.textwidget {
+    color: rgb(197, 197, 197);
+	padding: 0px 0px 0px 0px;
+}
+p.float-left {
+    color: rgb(255, 255, 255);
+}
+footer ul li a {
+    color: rgb(197, 197, 197);
+}
+footer .footer-logo h5 a {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin: 30px 0 15px 0;
+}
+.p-color{
+    color: #cccccc !important;
+}
+
+footer {
+    background: url(https://rynantech.com/wp-content/uploads/2019/05/bgfooter9.png);
+    background-size: auto;
+}
+footer .bottom-footer {
+    padding: 0px 0 0px 0;
+}
+
+ul.footer-social  {
+    margin: -50px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+ul.sub-menu, .home-service-section ul, .tab-pane ul, .widgets ul, footer ul, .woocommerce ul, ul.nav, ul#crumbs, .single-portfolio ul, ul.second-sub-menu {
+    list-style: none;
+    /* padding: 0px 0px 5px 30px; */
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+}

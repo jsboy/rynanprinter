@@ -1,0 +1,269 @@
+
+Fonts Poppins 
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url(../fonts/Poppins-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url(../fonts/Poppins-ExtraBoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+body{
+
+	background: #525252 url("../images/bg-body.png") repeat top left;
+	font-family: 'Poppins';
+    font-weight: normal;
+    color: rgba(0,0,0,0.65);
+    font-size: 16px;
+    position: relative;
+}
+
+
+a {
+
+    color: #7bc545;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: .25rem;
+    position: absolute;
+}
+
+.bg-gray {
+    background-color: #ffffff !important;
+	padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+.dropdown-item {
+    color: #ffffff !important;
+}
+
+.navbar li a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar li a:hover {
+    color: #7bc545 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo-wrap img {
+    
+margin-left: 380px;
+
+}
+
+/* right nav menu */
+    ul.navbar-nav.ml-auto {
+    line-height: 40px;
+    height: 40px;
+    /* padding: 10px 110px 0px 0px; */
+    font-size: 18px;
+    bottom: 26px;
+    position: absolute;
+
+    } 
+
+/* Spacing menu */
+.navbar-light .navbar-nav .nav-link {
+    color: #777;
+    margin: -5px 0px 0px 18px;
+}
+
+
+/*Sub Menu*/
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    /*position: absolute;*/
+    background-color: rgba(74, 74, 74, 0.8);
+    margin-left: 40px!important;
+    margin-top: -6px!important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 190%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #555;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.15); */
+    border-radius: .25rem;
+    /* background-color: transparent; */
+  
+}
+
+
+
+    .dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+    /* border-radius: .25rem; */
+    /* border-top: 1px solid rgba(51,122,183,.5); */
+}
+
+
+
+/* lyhung canh le trai logo */
+.logo.float-left.tran4s {
+  margin-left: 59px;
+    
+}
+
+ body .main-page-wrapper {
+   overflow-x:hidden;
+ }
+
+ h1,h2,h3,h4,h5,h6 { margin:0;padding: 0; color: #7bc545;}
+.blog-details .blog-main-post h1, .blog-details .blog-main-post h2,.blog-details .blog-main-post h3,
+.blog-details .blog-main-post h4, .blog-details .blog-main-post h5, .blog-details .blog-main-post h6 {
+    margin: 0 0 20px 0;
+}
+ h1 {font-size: 60px; font-weight: 600;}
+ h2 {font-size: 40px; font-weight: 600;}
+ h3 {font-size: 30px; font-weight: 500;}
+ h4 {font-size: 24px; font-weight: 500;}
+ h5 {font-size: 22px; font-weight: 500;}
+ h6 {font-size: 20px; font-weight: normal;}
+ p {line-height: 32px;}
+ a {text-decoration: none; display: inline-block;}
+ a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
+
+ button {border:none;outline: none;-webkit-box-shadow: none;box-shadow: none;display: block; padding: 0;}
+ input,textarea {outline: none; -webkit-box-shadow: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.float-left {float:left;}
+.float-right {float:right;}
+.m-top0 {margin-top: 0 !important;}
+.m-bottom0 {margin-bottom: 0 !important;}
+.p-bottm0 {padding-bottom: 0 !important;}
+.no-border {border: none !important;}
+/*--------------------- Transition --------------------*/
+.tran3s,header.theme-menu-wrapper #mega-menu-wrapper .nav>li>a:before,#mega-menu-wrapper .nav>li.dropdown-holder .sub-menu li a:before,
+.home-service-section .theme-title a:before,.owl-theme .owl-nav [class*=owl-],.nav-tabs > li > a,.banner-three .container a.button-two:after,
+.about-text .about-tab-wrapper .nav-tabs > li > a,.gullu-portfolio .single-item .opacity a.view-more:before,.our-blog .single-blog .image img,
+.bootstrap-select.btn-group .dropdown-menu li a {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.tran4s,.home-service-section ul li div i {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+ /*----------------------- Theme Color File -------------------*/
+.p-color,.what-we-do .single-block:hover h5 a,.more-about-us .main-content .main-wrapper h4:before,.home-service-section .theme-title a:hover,
+.home-service-section ul li:hover div h5 a,.testimonial-section .main-container .item .wrapper p:before,.home-blog-section .single-blog:hover>a,
+footer .footer-logo h5 a:hover,footer ul li a:hover,footer ul.footer-social li a:hover,#theme-main-banner.banner-one .camera_prev:before, #theme-main-banner.banner-one .camera_next:before,
+.our-team-styleOne .single-team-member .image .opacity ul li a,.service-version-one .single-service:hover a, .single-service:hover .text a,
+.gullu-portfolio .single-item:hover .opacity a.view-more,.portfolio-details .page-changer li a:hover,.our-blog .single-blog:hover .text>a,
+.our-blog .single-blog.solid-color:hover .text>a,.our-blog.blog-v3 .single-blog:hover .text h5 a,.our-blog.blog-v2 .single-blog:hover .text h5 a,.blog-details .tag-option ul li a:hover,
+.blog-details .comment-area .comment-section .comment button:hover,.contact-us .contact-address>a:hover,.contact-us .contact-address ul li a:hover,
+.shop-page .shop-sidebar .widget_product_categories li a:hover,.shop-page .shop-product-wrapper .single-product:hover h6 a,.shop-page .shop-product-wrapper .single-product>a:hover,
+.shop-page .shop-sidebar .popular-product li:hover .text a,header.theme-menu-wrapper.menu-style-two #mega-menu-wrapper .nav .login-button a:hover,
+.theme-modal-box .modal-content .modal-body form ul li label:before  {
+  color:#cccccc !important;
+*/color:#00d747 !important;*/
+
+}
+.p-bg-color,header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a:hover,.our-portfolio .theme-title a:hover,.home-service-section .theme-title a:hover:before,
+.pricing-plan-one .nav-tabs > li.active > a,.pricing-plan-one .nav-tabs > li.active > a:hover,.pricing-plan-one .nav-tabs > li.active > a:focus,.banner-two .watch-video a:hover,
+.our-team-styleOne .title a:hover,.our-blog.blog-v2 .load-more:hover,.bootstrap-select.btn-group .dropdown-menu li.selected a,.bootstrap-select.btn-group .dropdown-menu li:hover a,
+.shop-details .procuct-details .product-info .cart-button,.shop-details .procuct-details .product-info button.wishlist-button:hover,#mega-menu-wrapper .navbar-toggle .icon-bar {
+  background: #00d747;
+}
+header.theme-menu-wrapper #mega-menu-wrapper .nav .login-button a:hover,.our-portfolio .theme-title a:hover,.banner-two .watch-video a:hover,.our-team-styleOne .title a:hover,
+header.theme-menu-wrapper.menu-style-two #mega-menu-wrapper .nav .login-button a:hover,.gullu-portfolio .single-item .opacity a.view-more:hover:before,.our-blog.blog-v2 .load-more:hover,
+.contact-us .contact-address ul li a:hover,.shop-page .shop-sidebar .sidebar-search input:focus,.shop-details .procuct-details .product-info .cart-button,
+.shop-details .procuct-details .product-info button.wishlist-button:hover {
+  border-style: solid;
+  border-color:#00d747;
+}
+/*----------------------- Footer ---------------------*/
+footer.bg-two {
+ /* padding-top: 150px; lyhung */
+padding-top: 40px;
+}
+
+footer {padding-top:180px;}
+footer .footer-logo h5 a {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+/*  color: rgba(0,0,0,0.65);*/
+  margin: 30px 0 15px 0;
+}
+footer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+color: #ffffff;
+}
+footer ul li {line-height: 40px;}
+footer ul li a {
+color: rgb(197, 197, 197);
+  /*color: rgba(0,0,0,0.65);*/
+  font-weight: 500;
+}
+footer input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 5px;
+  padding: 0 20px;
+  background: transparent;
+  /* lyhung */
+  display: none;
+}
+footer form {padding: 15px 0 35px 0;}
+footer ul.footer-social li {display: inline-block;}
+footer ul.footer-social li a {
+  color: #b4b5b6;
+  font-size: 28px;
+  margin-right: 15px;
+
+}
+footer .bottom-footer p,footer .bottom-footer ul li {line-height: 40px;}
+footer .bottom-footer p a {font-weight: 500; color: #7bc545;}
+footer .bottom-footer ul li {
+  float:left;
+  padding-left: 50px;
+}
+footer .bottom-footer ul li h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+footer .row [class*='col-'] {margin-bottom: 0px;}
+
+footer .bottom-footer {padding: 25px 0 20px 0;;}
+/* lyhung */
+footer .bottom-footer {padding: 25px 0 70px 0;}

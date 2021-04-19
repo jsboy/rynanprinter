@@ -1,0 +1,46 @@
+body
+{
+    background-image: url('../images/bg.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.h1{ font-weight: bold; font-size: 20px; color: #7bc545; margin-bottom: 2px; }
+.h2{ font-weight: bold; font-size: 16px; color: #4f4f4f; margin-bottom: 3px; font-style: italic;}
+
+#box .banner{ margin-bottom: 10px; }
+#box h1{ font-weight: bold; font-size: 20px; color: #7bc545; margin-bottom: 2px; }
+#box h2{ font-weight: bold; font-size: 16px; color: #4f4f4f; margin-bottom: 3px; font-style: italic;}
+#box .description{ font-size: 16px; color: #4f4f4f; font-style: italic; }
+
+#box .logo{ text-align: right; margin-bottom: 10px; }
+
+#box a img{ border: none; }
+
+.tb_container{ width: 278px; height: 33px; overflow: hidden; border: none; }
+.tb_container2{ width: 378px; height: 133px; overflow: hidden; border: none; }
+.tb_containertextarea{ width: 278px; height: 133px; overflow: hidden; border: none; }
+.tb_username_container{ background: url('../images/tb_username.png') left center no-repeat transparent; }
+.tb_password_container{ background: url('../images/tb_password.png') left center no-repeat transparent; }
+.tb_textbox_container{ background: url('../images/tb_textbox.png') left center no-repeat transparent; }
+.tb_textbox_container2{ background: url('../images/tb_textbox.png') left center no-repeat transparent; width: 538px; height: 233px;}
+.tb_type_container{ background: url('/sites/admin/images/login/cbo.png') left center no-repeat transparent; }
+.tb_username_container div, .tb_password_container div{ padding: 5px 0px 0px 32px; }
+.tb_textbox_container div{ padding: 5px 0px 0px 8px; }
+.tb_type_container div{ padding: 7px 0px 0px 8px; }
+.textbox{ height: 20px; width: 260px; border: none !important; background-color: transparent; font-family: Arial !important; font-size: 12px !important; }
+.textbox2{ height: 20px; width: 325px; border: none !important; background-color: transparent; font-family: Arial !important; font-size: 12px !important; }
+.textboxarea{ height: 120px; width: 325px; border: none !important; background-color: transparent; font-family: Arial !important; font-size: 12px !important; }
+.login_btn { border: none !important; width: 106px; height: 31px; background: url('../images/btn_login.png') no-repeat !important; }
+.btn_print { border: none !important; width: 32px; height: 32px; background: url('../images/btn_print.jpg') no-repeat !important; }
+
+.text {margin: 6px 8px;}
+.sub_login .key{ float: left; padding: 7px 15px 0 0; font-family: Arial !important; font-size: 14px; color: #666666; }
+.sub_login .val{ float: right; width: 277px; font-family: Arial !important; }
+.sub_login .row{ clear: both; height: 45px; }
+.sub_login label{ font-family: Arial !important; font-size: 14px !important; color: #666666 !important; }
+.sub_login a{ font-family: Arial !important; font-size: 14px !important; }
+.row2 { margin: 12px 22px; margin-left: 72px; }
+

@@ -1,0 +1,66 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	/*background-color: #A2A2A2;
+	background-image: url(../images/BG_main.gif);
+	background-repeat: repeat;
+	background-position: bottom left;
+	background-attachment: fixed;*/
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	/*color: 5C5C5C;*/
+}
+
+
+
+
+table, tr, td, p {
+	margin: 0px;
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+
+.tborder
+{
+	background: #FFFFFF;
+	color: #707070;
+	border: 1px solid #C8E2FF;
+}
+.tcat
+{
+	background: #7bc545  repeat-x top left;
+	color: #FFFFFF;
+	font: bold 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+.panelsurround
+{
+	background: #fff;
+	color: #707070;
+}
+.panel
+{
+	background: #fff;
+	color: #707070;
+	padding: 10px;
+	border:1px solid #C8E2FF;
+}

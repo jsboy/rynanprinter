@@ -1,0 +1,340 @@
+<!-- body {font-family: Arial;}
+ -->
+
+
+
+*{ font-size:15px;}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fffff;
+	width: 900px;
+    margin: 40px 20px 20px 40px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 14px;
+    transition: 0.3s;
+    font-size: 15px;
+	color: #adadad;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+/* Change background color of buttons on hover
+.tab button:hover {
+    background-color: #fff;
+}
+ */
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #efefef;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+	width: 900px;
+    margin: -20px 20px auto 40px;
+}
+
+/* END Style the tab */
+
+
+.onecolumntitle {
+    width: 902px;
+    background: #fff;
+    /* border: 1px solid #cdcdcd; */
+    margin: 40px 0 20px 40px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px #ccc;
+    -webkit-box-shadow: 0 1px 2px #ccc;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+.onecolumntitle .header {
+    margin:0;
+    padding:0;
+    float:left;
+    background:#cdcdcd url("https://rynantech.com/partner-login/sites/images/bg_window_header.png") repeat-x;
+    width:100%;
+    height:35px;
+    border-bottom:0px solid #ccc;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.onecolumntitle .header span {
+display: block;
+font-size: 16px;
+font-weight: bold;
+padding: 8px 0 0 20px;
+float: left;
+width: auto;
+cursor: n-resize;
+color: #7bc545;
+}
+
+
+
+
+
+.onecolumn {
+    width:91%;
+    background:#fff;
+    border:1px solid #cdcdcd;
+    margin:40px 0 20px 40px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:0 1px 2px #ccc;
+    -webkit-box-shadow:0 1px 2px #ccc;
+    box-shadow:0 1px 2px #ccc;
+}
+
+.onecolumn .header {
+    margin:0;
+    padding:0;
+    float:left;
+    background:#ececec url("https://rynantech.com/partner/sites/images/bg_window_header.png") repeat-x;
+    width:100%;
+    height:35px;
+    border-bottom:1px solid #ccc;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-left-radius:5px;
+}
+
+.onecolumn .header span {
+display: block;
+font-size: 16px;
+font-weight: bold;
+padding: 8px 0 0 20px;
+float: left;
+width: auto;
+cursor: n-resize;
+color: #7bc545;
+}
+
+#main1 {
+margin: 30px auto;
+width: 700px;
+padding: 30px 30px 10px;
+border: 1px solid #ccc;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.inputnotes {
+    height:50px;
+}
+
+h1,h2,h3,h4,h5,h6 {font-weight:normal}
+table {border-spacing:0;}
+fieldset,img,abbr,acronym {border:0;}
+address {font-style:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+q:before,q:after {content:'';}
+a {text-decoration:none;outline:none;color:#005FA3;}
+a:hover {text-decoration:underline;}
+hr {border:0;height:1px;background-color:#000;color:#000;}
+a img,:link img,:visited img {border:none;}
+
+input[type="submit"] {cursor:pointer;font-family:Tahoma;font-size:13px;padding-left:5px; padding-right:5px;} 
+textarea {padding: 4px; border:solid 1px #c0c0c0;}
+select {border: solid 1px #C0C0C0; padding:1px; font-family:Tahoma; font-size:13px;}
+input[type="text"], input[type="password"] {
+border:solid 1px #c0c0c0; padding:2px; font-family:Tahoma; font-size:13px; color:#333333;
+}
+input[type="Checkbox"], input[type="radio"] {margin-right:5px; margin-left: 5px;}
+.TextInput{border:solid 1px #c0c0c0;}
+
+.mem_acc {
+	font-size: 22px;
+	font-family: Arial,Tahoma;
+	margin: 22px 12px;
+	text-shadow: 0px 0px 0px #000;
+}
+
+
+tr:odd{background:#e3e3e3}
+
+.le{
+background: #ffffff;
+}
+.chan{
+background: #aaaaaa;
+}
+
+
+
+
+#tracelog
+{
+
+background: #fff;
+text-align: center;
+font-weight: bold;
+
+}
+
+
+#tracelog1
+{
+
+    width:95%;
+	margin:20px 0 20px 20px;
+    border-bottom:1px solid #ccc;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-left-radius:5px;
+background: transparent;border: 0px solid #E0E0E0; border-top-width:0px; 
+text-align:center; 
+}
+
+
+/*
+ span {
+
+    margin:0;
+    padding:0px 0px 0px 0px;
+    
+    background:#cdcdcd url("../images/bg_window_header.png") repeat-x;
+    width:170%;
+    height:35px;
+    border-bottom:1px solid #ccc;
+    -moz-border-radius-topright:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-left-radius:5px;
+}
+*/
+
+
+#createnew {
+
+ margin: 5px 0px 0px 780px;
+}
+
+
+#lastupdated {
+
+font-weight: bold;
+ margin: 20px 0px -35px 40px;
+}
+
+#lastupdated {
+
+font-weight: bold;
+ margin: 20px 0px -35px 40px;
+}
+
+
+#menubutton {
+margin: 1px 0px -40px 825px;
+}
+
+
+
+#tracelog2
+{
+
+	background: #FFFFFF;
+	border: 1px solid #d3d2d2;
+}
+
+#leftpn2 {
+
+	font-size: 22px;
+	font-family: Arial,Tahoma;
+	text-shadow: 0px 0px 0px #000;
+ text-align: center;
+ margin: -228px 0px 0px 15px;
+}
+
+
+
+#centerpnmap {
+
+ margin: -25px 0px 0px 225px;
+}
+
+
+
+.left{float:left;}
+.right{float:right;}
+
+#AjaxLoading {
+    background: none repeat scroll 0 0 #FCF5AA;
+    display: none;
+    padding: 5px 10px;
+    text-align: center;
+    width: 180px;
+    z-index: 2147483647;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Themes */
+.white {
+	color: white;
+}
+
+
+.messagedel {
+	font-size: 22px;
+	font-family: Arial,Tahoma;
+	margin: 22px 12px 0px 400px;
+	text-shadow: 0px 0px 0px #000;
+	text-algin: center;
+}
+
+.login_text1 {
+	font-size: 14px;
+	font-family: Arial,Tahoma;
+	margin: -42px 12px 22px 12px;
+	text-shadow: 0px 0px 0px #fff;
+}
+
+a.hrlink {text-decoration:none;outline:none;color:#337ab7;font-size: 13px;font-family: Arial,Tahoma;text-shadow: 0px 0px 0px #000;}
+a.hrlink:hover {text-decoration:none;color: #78D2FF;text-shadow: 0px 0px 0px #000;}
+
+}
+
