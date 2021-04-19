@@ -9,6 +9,7 @@
 		$brochure = get_field('brochure');
 		$video = get_field('video');
 		$features_icon = get_field('features_icon');
+		$solvent_inks = get_field('solvent_inks');
 
 ?>
 	<section class="section section-top waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='dark'>
@@ -131,7 +132,7 @@
 		</div>
 	</section>
 	<?php endif; ?>
-	<?php if(!is_empty_group('specifications_list')): ?>
+	<?php if(!is_empty_group('specifications_list') || !empty($solvent_inks)): ?>
 	<section class="section waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='dark'>
 		<div class="container">
 			<div class="mb-md text-center">
@@ -173,10 +174,14 @@
 				?>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="mb-md text-style-6 font-light"><?php the_text($solvent_inks); ?></div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<?php endif; ?>
 <?php
-
 	endwhile;
 	get_footer();
