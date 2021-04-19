@@ -201,5 +201,14 @@ function upload_user_file( $file = array() ) {
       return false;
 }
 
+function is_empty_group($groupname) {
+    $subfields = get_field($groupname);
+    $temp = '';
+    foreach ($subfields as $name => $value) :
+        $temp .= $value;
+    endforeach;
+    return empty($temp);
+}
+
 add_action('wp_ajax_ajax_upload_user_file', 'ajax_upload_user_file');
 add_action('wp_ajax_nopriv_ajax_upload_user_file', 'ajax_upload_user_file');

@@ -46,7 +46,7 @@
 	
 	<section class="section section-background section-160 waypoint-group" data-nav-effect="true" data-navigator='white' data-navigator-up='dark'>
 		<div class="container">
-			<?php if(have_rows('features')): ?>
+			<?php if(!is_empty_group('features')): ?>
 			<div class="section-block section-text-block-wide">
 				<h3 class="the-title text-primary text-style-3"><?php _e('Key Features'); ?></h3>
 				<div class="text-block-content mb-xl">
@@ -77,7 +77,7 @@
 				<hr class="my-0">
 			</div>
 			<?php endif; 
-			if(have_rows('benefits_list')):
+			if(!is_empty_group('benefits_list')):
 			?>
 			<div class="section-text-block-wide">
 				<h3 class="the-title text-primary text-style-3"><?php _e('Benefits'); ?></h3>
@@ -129,7 +129,7 @@
 		</div>
 	</section>
 	<?php endif; ?>
-	<?php if(have_rows('specifications_list')): ?>
+	<?php if(!is_empty_group('specifications_list')): ?>
 	<section class="section waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='dark'>
 		<div class="container">
 			<div class="mb-md text-center">
