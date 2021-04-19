@@ -5,7 +5,7 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond %{REQUEST_URI} !^/(partner-login|partner-login/.*)$ 
+RewriteCond %{REQUEST_URI} ^/partner-login/(.*)$ [OR]
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
