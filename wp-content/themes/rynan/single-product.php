@@ -176,7 +176,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1">
-					<div class="mb-md text-style-6 font-light"><?php the_text($solvent_inks); ?></div>
+					<div class="mb-md font-light"><?php the_text($solvent_inks); ?></div>
 				</div>
 			</div>
 		</div>
