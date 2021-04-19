@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</section>
-	
+	<?php if(!is_empty_group('features') || !is_empty_group('benefits_list')): ?>
 	<section class="section section-background section-160 waypoint-group" data-nav-effect="true" data-navigator='white' data-navigator-up='dark'>
 		<div class="container">
 			<?php if(!is_empty_group('features')): ?>
@@ -104,7 +104,9 @@
 			<?php endif; ?>
 		</div>
 	</section>
-	<?php if(!empty($pictures)): ?>
+	<?php 
+	endif;
+	if(!empty($pictures)): ?>
 	<section class="section product-slider waypoint-group" data-nav-effect="true" data-navigator='dark' data-navigator-up='white'>
 		<div class="container">
 			<div class="mb-md text-center">
