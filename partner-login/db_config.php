@@ -1,7 +1,7 @@
 <?php
 $db_host = "localhost"; // Giữ mặc định là localhost
-$db_username    = "dung2021"; //Can thay doi theo username truy cap MySQL
-$db_password    = "dung2021";//Can thay doi theo mat khau truy cap MySQL
+$db_username    = "root"; //Can thay doi theo username truy cap MySQL
+$db_password    = "gMGdFP22fN4bmsn";//Can thay doi theo mat khau truy cap MySQL
 $db_name    = "partner";// Can thay doi theo ten ban tao cho database
 
 if(function_exists('mysql_connect')) {
