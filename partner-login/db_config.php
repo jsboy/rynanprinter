@@ -5,9 +5,10 @@ $db_password    = "gMGdFP22fN4bmsn";//Can thay doi theo mat khau truy cap MySQL
 $db_name    = "partner";// Can thay doi theo ten ban tao cho database
 
 if(function_exists('mysql_connect')) {
-    $conn=mysql_connect("localhost", $db_username, $db_password) or die("Không thể kết nối đến MySQL server");
+    $conn=mysql_connect($db_host, $db_username, $db_password) or die("Không thể kết nối đến MySQL server");
 }else {
-    $conn=mysqli_connect("localhost", $db_username, $db_password) or die("Cannot connect to Mysql server");
+    // $conn = mysqli_connect($db_host, $db_username, $db_password) or die("Cannot connect to Mysql server");
+    $conn = new mysqli($db_host, $db_username, $db_password);
 }
 
 $result=mysql_select_db($db_name) or die("Database không tồn tại. Có thể database chưa được tạo!");
