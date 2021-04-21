@@ -13,8 +13,8 @@ $db_name    = "partner";// Can thay doi theo ten ban tao cho database
 //     $result=mysqli_select_db($conn,$db_name);
 // }
 $conn=mysql_connect($db_host, $db_username, $db_password) or die("Không thể kết nối đến MySQL server");
-$result=mysql_select_db($db_name);
 
+$result=mysql_select_db($db_name) or die("Database không tồn tại. Có thể database chưa được tạo!");
 // $result=mysql_select_db($db_name) or die("Database không tồn tại. Có thể database chưa được tạo!");
 
 ?>
