@@ -178,7 +178,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 657px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -190,7 +190,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 930px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -220,7 +220,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -230,7 +230,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y !important;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y !important;
 	padding: 0px 0px 0px 4px;
      
    
@@ -241,7 +241,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -252,7 +252,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -263,7 +263,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -273,7 +273,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: auto;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -288,7 +288,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 1025px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -299,7 +299,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 662px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -309,7 +309,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 690px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -339,7 +339,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 1322px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -349,7 +349,7 @@ th {
 	width: 987px;
 	margin: auto;
 	height: 1420px;
-	background: url("/../images/container_bg.jpg") repeat-y;
+	background: url("/partner-login/images/container_bg.jpg") repeat-y;
 	padding: 0px 0px 0px 4px;
      
    
@@ -630,7 +630,7 @@ width: 800px;
 
 
 
-.tertiary{border:0}.tertiary a{color:#404458;font-size:13px}.tertiary ul{list-style:none;padding:0;margin:0}.tertiary li{height:30px;background:url(/../images/structure/sprite.png) no-repeat;background-position:0 0;margin:12px 0 0;line-height:31px}.tertiary li:first-child{margin-top:0}.tertiary li.even{background:0}.tertiary li.no-filter a{padding-right:12px}.tertiary a{display:block;padding:0 89px 0 62px;position:relative;background:url(/../images/structure/sprite.png) no-repeat;background-position:26px -689px}.ie7 .tertiary a{height:30px}.tertiary a:hover{color:#fc0405}.tertiary .video{background:url(/../images/structure/sprite.png) no-repeat;background-position:20px -587px}.tertiary .image{background:url(/../images/structure/sprite.png) no-repeat;background-position:20px -799px}
+.tertiary{border:0}.tertiary a{color:#404458;font-size:13px}.tertiary ul{list-style:none;padding:0;margin:0}.tertiary li{height:30px;background:url(/partner-login/images/structure/sprite.png) no-repeat;background-position:0 0;margin:12px 0 0;line-height:31px}.tertiary li:first-child{margin-top:0}.tertiary li.even{background:0}.tertiary li.no-filter a{padding-right:12px}.tertiary a{display:block;padding:0 89px 0 62px;position:relative;background:url(/partner-login/images/structure/sprite.png) no-repeat;background-position:26px -689px}.ie7 .tertiary a{height:30px}.tertiary a:hover{color:#fc0405}.tertiary .video{background:url(/partner-login/images/structure/sprite.png) no-repeat;background-position:20px -587px}.tertiary .image{background:url(/partner-login/images/structure/sprite.png) no-repeat;background-position:20px -799px}
 
 
 
@@ -847,7 +847,7 @@ width: 800px;
 
 
 #top #logo {
- background: url(../../images/logo.png) no-repeat;
+ background: url(../partner-login/images/logo.png) no-repeat;
  width: 255px;
  height: 62px;
  margin: -14px 0px -37px 45px;
@@ -924,57 +924,57 @@ vertical-align:top;
 
 .connertopleft
 {
-background-image:url(/../images/connertopleft.jpg);
+background-image:url(/partner-login/images/connertopleft.jpg);
 
 background-repeat:no-repeat;
 }
 .connertopleft
 {
-background-image:url(/../images/connertopleft.jpg);
+background-image:url(/partner-login/images/connertopleft.jpg);
 
 background-repeat:no-repeat;
 background-color:#000000;
 }
 .connertopright
 {
-background-image:url(/../images/connertopright.jpg);
+background-image:url(/partner-login/images/connertopright.jpg);
 
 background-repeat:no-repeat;
 }
 .connerbottomleft
 {
-background-image:url(/../images/connerbottomleft.jpg);
+background-image:url(/partner-login/images/connerbottomleft.jpg);
 
 background-repeat:no-repeat;
 }
 .connerbottomright
 {
-background-image:url(/../images/connerbottomright.jpg);
+background-image:url(/partner-login/images/connerbottomright.jpg);
 
 background-repeat:no-repeat;
 }
 .connerlinetop
 {
-background-image:url(/../images/connerlinetop.jpg);
+background-image:url(/partner-login/images/connerlinetop.jpg);
 
 background-repeat:repeat-x;
 }
 .connerlineleft
 {
-background-image:url(/../images/connerlineleft.jpg);
+background-image:url(/partner-login/images/connerlineleft.jpg);
 
 background-repeat:repeat-y;
 
 }
 .connerlineright
 {
-background-image:url(/../images/connerlineright.jpg);
+background-image:url(/partner-login/images/connerlineright.jpg);
 
 background-repeat:repeat-y;
 }
 .connerlinebottom
 {
-background-image:url(/../images/connerlinebottom.jpg);
+background-image:url(/partner-login/images/connerlinebottom.jpg);
 
 background-repeat:repeat-x;
 }
